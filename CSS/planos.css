@@ -1,0 +1,51 @@
+/* CSS para personalizar os planos de assinatura da gatinhosflix */
+.subscription-plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subscription-plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e88eba;
+  }
+  
+  .plan-price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e88eba;
+  }
+  
+  .plan-description {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .plan-button {
+    background-color: #e88eba;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 12px 24px;
+    transition: background-color 0.3
+  }  
