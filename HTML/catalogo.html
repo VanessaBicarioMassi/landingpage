@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>GATINHOSFLIX - Página Inicial</title>
+        <title>GATINHOSFLIX - Assinatura</title>
         <!-- CSS do corpo da página -->
         <link rel="stylesheet" href="../CSS/body.css">
         <!-- CSS do menu de sessões -->
@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="../CSS/gradeDeFilmes.css">
         <!-- CSS do footer -->
         <link rel="stylesheet" href="../CSS/footer.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <!-- CSS do formulario de compras -->
+        <link rel="stylesheet" href="../CSS/form.css">
     </head>
     <body>
         <header>
@@ -21,55 +21,54 @@
             </div>
             <nav>
                 <a href="../HTML/index.html">Nossos Serviços</a>
-                <a href="../HTML/catalogo.html">Catálogo</a>
                 <a href="../HTML/quemsomos.html">Quem Somos</a>
             </nav>
         </header>
         <main>
             <body>
-                <div class="carousel">
-                    <div class="item">
-                        <img src="../imagens/filmes/gatobob.jpeg" alt="Um gato chamado BoB">
-                        <div class="item caption">Um gato de rua chamado Bob</div>
-                        <div class="item-price">R$9.99</div>
+                <form onsubmit="return validarFormulario()">
+                    <div>
+                        <h2>Dados do Comprador</h2>
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required><br>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                    
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required><br>
                     </div>
-                
-                    <div class="item">
-                        <img src="../imagens/filmes/agente.jpeg" alt="Agente 00-Gato">
-                        <div class="item caption">Agente 00-Gato</div>
-                        <div class="item-price">R$14.99</div>
+                    <div>
+                        <h2>Informações de Pagamento</h2>
+                        <label for="numero-cartao">Número do Cartão:</label>
+                        <input type="text" id="numero-cartao" name="numero-cartao" required><br>
+                    
+                        <label for="nome-cartao">Nome no Cartão:</label>
+                        <input type="text" id="nome-cartao" name="nome-cartao" required><br>
+                    
+                        <label for="validade-cartao">Validade do Cartão:</label>
+                        <input type="text" id="validade-cartao" name="validade-cartao" required><br>
+                    
+                        <label for="cvv-cartao">CVV do Cartão:</label>
+                        <input type="text" id="cvv-cartao" name="cvv-cartao" required><br>
                     </div>
-                
-                    <div class="item">
-                        <img src="../imagens/filmes/gatobotas.jpg" alt="O gato de botas">
-                        <div class="item caption">O Gato de Botas</div>
-                        <div class="item-price">R$19.99</div>
+                    <div>
+                        <h2>Endereço de Entrega</h2>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required><br>
+                    
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required><br>
+                    
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" required><br>
+                    
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required><br>
+                    
+                        <button type="submit">Finalizar Compra</button>
                     </div>
-    
-                    <div class="item">
-                        <img src="../imagens/filmes/gatobotas2.jpg" alt="O gato de botas 2">
-                        <div class="item caption">O Gato de Botas 2</div>
-                        <div class="item-price">R$7.99</div>
-                    </div> 
-    
-                    <div class="item">
-                        <img src="../imagens/filmes/gatoparis.jpeg" alt="Um gato em paris">
-                        <div class="item caption">Um Gato em Paris</div>
-                        <div class="item-price">R$12.99</div>
-                    </div> 
-    
-                    <div class="item">
-                        <img src="../imagens/filmes/gatos.jpg" alt="gatos">
-                        <div class="item caption">Gatos</div>
-                        <div class="item-price">R$3.99</div>
-                    </div>
-    
-                    <div class="item">
-                        <img src="../imagens/filmes/petsunited.jpg" alt="Pets United">
-                        <div class="item caption">Pets United</div>
-                        <div class="item-price">R$3.99</div>
-                    </div> 
-                </div>
+                </form>                
             </body>            
         </main>
             <footer>
@@ -78,5 +77,6 @@
                 <a href="https://www.twitter.com" target="_blank"><img src="../imagens/redes/twitterlogo.png"></a>
                 <p>Todos os direitos reservados - GATINHOSFLIX © 2023</p>
             </footer>
+        <script>src="../JS/validarObrigatorio.js"</script>
     </body>           
 </html>
