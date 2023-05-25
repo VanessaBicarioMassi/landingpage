@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="../CSS/footer.css">
         <!-- CSS do formulario de compras -->
         <link rel="stylesheet" href="../CSS/form.css">
+        <!-- CSS do formulario de compras -->
+        <link rel="stylesheet" href="../CSS/plano-personalizado.css">
     </head>
     <body>
         <header>
@@ -26,8 +28,35 @@
         </header>
         <main>
             <body>
+                <h2>Seleção de Plano</h2>
+  
+                <form>
+                  <label for="plano">Plano:</label>
+                  <select id="plano" name="plano">
+                    <option value="plano1">Plano 1</option>
+                    <option value="plano2">Plano 2</option>
+                    <option value="plano3">Plano 3</option>
+                  </select>
+                  
+                  <div class="radio-container">
+                    <input type="radio" id="baixa" name="qualidade" value="baixa">
+                    <label for="baixa"></label>
+                  </div>
+                  <div class="radio-container">
+                    <input type="radio" id="media" name="qualidade" value="media">
+                    <label for="media"></label>
+                  </div>
+                  <div class="radio-container">
+                    <input type="radio" id="alta" name="qualidade" value="alta">
+                    <label for="alta"></label>
+                  </div>                  
+                  
+                  <label for="valor-total">Valor Total:</label>
+                  <input type="text" id="valor-total" name="valor-total" readonly>
+                </form>
+
                 <form onsubmit="return validarFormulario()">
-                    <div>
+                    <div class="form-comprador">
                         <h2>Dados do Comprador</h2>
                         <label for="nome">Nome completo:</label>
                         <input type="text" id="nome" name="nome" required><br>
@@ -38,7 +67,7 @@
                         <label for="telefone">Telefone:</label>
                         <input type="tel" id="telefone" name="telefone" required><br>
                     </div>
-                    <div>
+                    <div class="form-pagamento">
                         <h2>Informações de Pagamento</h2>
                         <label for="numero-cartao">Número do Cartão:</label>
                         <input type="text" id="numero-cartao" name="numero-cartao" required><br>
@@ -52,9 +81,12 @@
                         <label for="cvv-cartao">CVV do Cartão:</label>
                         <input type="text" id="cvv-cartao" name="cvv-cartao" required><br>
                     </div>
-                    <div>
+                    <div class="form-endereco">
                         <h2>Endereço de Entrega</h2>
-                        <label for="endereco">Endereço:</label>
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required><br>
+
+                        <label for="rua">Rua:</label>
                         <input type="text" id="endereco" name="endereco" required><br>
                     
                         <label for="cidade">Cidade:</label>
@@ -63,10 +95,12 @@
                         <label for="estado">Estado:</label>
                         <input type="text" id="estado" name="estado" required><br>
                     
-                        <label for="cep">CEP:</label>
-                        <input type="text" id="cep" name="cep" required><br>
-                    
-                        <button type="submit">Finalizar Compra</button>
+                        <div class="capsula">
+                            <button type="submit">Finalizar Compra</button>
+                            <div class="gato-fofo">
+                                <img src="../imagens/filmes/cute-cat-cartoon-kitty.png">
+                            </div>
+                        </div>
                     </div>
                 </form>                
             </body>            
@@ -78,5 +112,7 @@
                 <p>Todos os direitos reservados - GATINHOSFLIX © 2023</p>
             </footer>
         <script>src="../JS/validarObrigatorio.js"</script>
+        <script>src="../JS/botaoInterativo.js"</script>
+        <script>src="../JS/personalizarPlano.js"</script>
     </body>           
 </html>
