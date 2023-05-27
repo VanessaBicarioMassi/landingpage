@@ -1,52 +1,34 @@
-.radio-container {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .radio-container label {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-  }
-  
-  .radio-container label::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border: 2px solid #ff007b;
-    border-radius: 50%;
-  }
-  
-  .radio-container label::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 8px;
-    height: 8px;
-    background-color: #ff007b;
-    border-radius: 50%;
-    opacity: 0;
-    transform: rotate(-45deg);
-    transition: opacity 0.2s ease-in-out;
-  }
-  
-  .radio-container input[type="radio"]:checked ~ label::after {
-    opacity: 1;
-  }
-  
-  .radio-container input[type="radio"]:checked ~ label::before {
-    border-color: #ff007b;
-  }
-  
-  .radio-container input[type="radio"]:checked ~ label::before,
-  .radio-container input[type="radio"]:not(:checked) ~ label::after {
-    background-color: #ff007b;
-  }
-  
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: pink;
+}
+
+.select {
+  width: auto;
+  white-space: nowrap;
+  overflow: visible;
+  color: pink;
+}
+
+.text {
+  color: pink;
+}
+
+.compact-legends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.legend {
+  margin: 5px;
+  font-size: 12px;
+}

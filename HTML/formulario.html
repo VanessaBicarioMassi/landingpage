@@ -17,42 +17,50 @@
         <link rel="stylesheet" href="../CSS/plano-personalizado.css">
     </head>
         <body>
-              <div class="container">
-                <h2 class="title">Título</h2>
-              </div>
-            
-              <div class="container">
-                <select class="select" id="select1">
-                  <option value="70">Opção 1</option>
-                  <option value="110">Opção 2</option>
-                  <option value="180">Opção 3</option>
-                </select>
-              </div>
-            
-              <div class="container">
-                <p class="text">Texto</p>
-              </div>
-            
-              <div class="container">
-                <select class="select" id="select2">
-                  <option value="1">Opção 1</option>
-                  <option value="1.2">Opção 2</option>
-                  <option value="1.5">Opção 3</option>
-                  <option value="1.7">Opção 4</option>
-                  <option value="2">Opção 5</option>
-                </select>
-              </div>
-            
-              <div class="container">
-                <legend class="legend">Legenda</legend>
-              </div>
-            
-              <div class="container">
-                <label for="valor" class="legend">Valor:</label>
-                <input type="text" id="valor" class="value-field" readonly>
-              </div>
-            
-              <script src="updateTotal.js"></script>            
+          <div class="container">
+            <h2 class="title">Selecione o plano ideal para você</h2>
+          </div>
+          
+          <div class="container">
+            <select class="select" id="select1">
+              <option value="70">Uma assinatura</option>
+              <option value="110">Duas assinaturas</option>
+              <option value="180">Três assinaturas</option>
+            </select>
+          </div>
+          
+          <div class="container">
+            <p class="text">Defina o nível do plano</p>
+          </div>
+          
+          <div class="container">
+            <select class="select" id="select2">
+              <option value="1">★</option>
+              <option value="1.2">★★</option>
+              <option value="1.5">★★★</option>
+              <option value="1.7">★★★★</option>
+              <option value="2">★★★★★</option>
+            </select>
+          </div>
+          
+          <div class="container">
+            <legend class="legend">Valor total a pagar:</legend>
+          </div>
+          
+          <div class="container">
+            <div class="compact-legends">
+              <legend class="legend">★: veja e baixe nosso conteúdo de forma ilimitada!</legend>
+              <legend class="legend">★★: obtenha frete grátis em todos os produtos da nossa loja!</legend>
+              <legend class="legend">★★★: receba mensalmente uma blusa de nossa loja!</legend>
+              <legend class="legend">★★★★: concorra aos nossos sorteios de mimos para o seu gatinho!</legend>
+              <legend class="legend">★★★★★: receba todos os meses na sua casa a nossa caixinha de mimos!</legend>
+              <legend class="legend">*cada pacote inclui todos os benefícios do pacote anterior!</legend>
+            </div>
+          </div>      
+            <div class="container">
+              <label for="valor" class="legend">Valor:</label>
+              <input type="text" id="valor" class="value-field" readonly>
+            </div>        
                 <form onsubmit="return validarFormulario()">
                     <div class="form-comprador">
                         <h2>Dados do Comprador</h2>
@@ -111,6 +119,6 @@
             </footer>
         <script>src="../JS/validarObrigatorio.js"</script>
         <script>src="../JS/botaoInterativo.js"</script>
-        <script>src="../JS/personalizarPlano.js"</script>
+        <script>src="../JS/updateTotal.js"</script>
     </body>           
 </html>
