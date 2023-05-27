@@ -16,45 +16,43 @@
         <!-- CSS do formulario de compras -->
         <link rel="stylesheet" href="../CSS/plano-personalizado.css">
     </head>
-    <body>
-        <header>
-            <div id="logo">
-                <img src="../imagens/LogoGATINHOSFLIX.jpeg" alt="Logo do site GATINHOSFLIX">
-            </div>
-            <nav>
-                <a href="../HTML/index.html">Nossos Serviços</a>
-                <a href="../HTML/quemsomos.html">Quem Somos</a>
-            </nav>
-        </header>
-        <main>
-            <body>
-                <h2>Seleção de Plano</h2>
-  
-                <form>
-                  <label for="plano">Plano:</label>
-                  <select id="plano" name="plano">
-                    <option value="plano1">Plano 1</option>
-                    <option value="plano2">Plano 2</option>
-                    <option value="plano3">Plano 3</option>
-                  </select>
-                  
-                  <div class="radio-container">
-                    <input type="radio" id="baixa" name="qualidade" value="baixa">
-                    <label for="baixa"></label>
-                  </div>
-                  <div class="radio-container">
-                    <input type="radio" id="media" name="qualidade" value="media">
-                    <label for="media"></label>
-                  </div>
-                  <div class="radio-container">
-                    <input type="radio" id="alta" name="qualidade" value="alta">
-                    <label for="alta"></label>
-                  </div>                  
-                  
-                  <label for="valor-total">Valor Total:</label>
-                  <input type="text" id="valor-total" name="valor-total" readonly>
-                </form>
-
+        <body>
+              <div class="container">
+                <h2 class="title">Título</h2>
+              </div>
+            
+              <div class="container">
+                <select class="select" id="select1">
+                  <option value="70">Opção 1</option>
+                  <option value="110">Opção 2</option>
+                  <option value="180">Opção 3</option>
+                </select>
+              </div>
+            
+              <div class="container">
+                <p class="text">Texto</p>
+              </div>
+            
+              <div class="container">
+                <select class="select" id="select2">
+                  <option value="1">Opção 1</option>
+                  <option value="1.2">Opção 2</option>
+                  <option value="1.5">Opção 3</option>
+                  <option value="1.7">Opção 4</option>
+                  <option value="2">Opção 5</option>
+                </select>
+              </div>
+            
+              <div class="container">
+                <legend class="legend">Legenda</legend>
+              </div>
+            
+              <div class="container">
+                <label for="valor" class="legend">Valor:</label>
+                <input type="text" id="valor" class="value-field" readonly>
+              </div>
+            
+              <script src="updateTotal.js"></script>            
                 <form onsubmit="return validarFormulario()">
                     <div class="form-comprador">
                         <h2>Dados do Comprador</h2>
