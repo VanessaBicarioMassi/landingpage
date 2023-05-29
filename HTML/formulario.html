@@ -26,108 +26,108 @@
             </nav>
         </header>
         <body>
-          <div class="container">
-            <h2 class="title">Selecione o plano ideal para você</h2>
-          </div>
-          
-          <div class="container">
-            <select class="select" id="select1">
-              <option value="20">Uma assinatura</option>
-              <option value="30">Duas assinaturas</option>
-              <option value="35">Três assinaturas</option>
-            </select>
-          </div>
-          
-          <div class="container">
-            <p class="text">Defina o nível do plano</p>
-          </div>
-          
-          <div class="container">
-            <select class="select" id="select2">
-              <option value="1">★</option>
-              <option value="1.5">★★</option>
-              <option value="2">★★★</option>
-              <option value="2.5">★★★★</option>
-              <option value="3">★★★★★</option>
-            </select>
-          </div>
-          
-          <div class="container">
-            <legend class="legend">Valor total a pagar:</legend>
-          </div>
-          
-          <div class="container">
-            <div class="compact-legends">
-              <legend class="legend">★: veja e baixe nosso conteúdo de forma ilimitada!</legend>
-              <legend class="legend">★★: obtenha frete grátis em todos os produtos da nossa loja!</legend>
-              <legend class="legend">★★★: receba mensalmente uma blusa de nossa loja!</legend>
-              <legend class="legend">★★★★: concorra aos nossos sorteios de mimos para o seu gatinho!</legend>
-              <legend class="legend">★★★★★: receba todos os meses na sua casa a nossa caixinha de mimos!</legend>
-              <legend class="legend">*cada pacote inclui todos os benefícios do pacote anterior!</legend>
-            </div>
-          </div>      
+            
             <div class="container">
-              <label for="valor" class="legend">Valor:</label>
-              <input type="text" id="valor" class="value-field" readonly>
-            </div>        
-                <form onsubmit="return validarFormulario()">
-                    <div class="form-comprador">
-                        <h2>Dados do Comprador</h2>
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="nome" required><br>
-                    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br>
-                    
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required><br>
+                <div class="compact-legends">
+                    <div class="container">
+                      <h2 class="title">Selecione o plano ideal para você</h2>
                     </div>
-                    <div class="form-pagamento">
-                        <h2>Informações de Pagamento</h2>
-                        <label for="numero-cartao">Número do Cartão:</label>
-                        <input type="text" id="numero-cartao" name="numero-cartao" required><br>
                     
-                        <label for="nome-cartao">Nome no Cartão:</label>
-                        <input type="text" id="nome-cartao" name="nome-cartao" required><br>
-                    
-                        <label for="validade-cartao">Validade do Cartão:</label>
-                        <input type="text" id="validade-cartao" name="validade-cartao" required><br>
-                    
-                        <label for="cvv-cartao">CVV do Cartão:</label>
-                        <input type="text" id="cvv-cartao" name="cvv-cartao" required><br>
+                    <div class="container">
+                      <select class="select" id="select1">
+                        <option value="20">Uma assinatura</option>
+                        <option value="30">Duas assinaturas</option>
+                        <option value="35">Três assinaturas</option>
+                      </select>
                     </div>
-                    <div class="form-endereco">
-                        <h2>Endereço de Entrega</h2>
-                        <label for="cep">CEP:</label>
-                        <input type="text" id="cep" name="cep" required><br>
+                    
+                    <div class="container">
+                      <p class="text">Defina o nível do plano</p>
+                    </div>
+                    
+                    <div class="container">
+                      <select class="select" id="select2">
+                        <option value="1">★</option>
+                        <option value="1.5">★★</option>
+                        <option value="2">★★★</option>
+                        <option value="2.5">★★★★</option>
+                        <option value="3">★★★★★</option>
+                      </select>
+                    </div>
+                        <legend class="legend">★: veja e baixe nosso conteúdo de forma ilimitada!</legend>
+                        <legend class="legend">★★: obtenha frete grátis em todos os produtos da nossa loja!</legend>
+                        <legend class="legend">★★★: receba mensalmente uma blusa de nossa loja!</legend>
+                        <legend class="legend">★★★★: concorra aos nossos sorteios de mimos para o seu gatinho!</legend>
+                        <legend class="legend">★★★★★: receba todos os meses na sua casa a nossa caixinha de mimos!</legend><br>
+                        <legend class="legend">*cada pacote inclui todos os benefícios do pacote anterior!</legend><br>
+                    <div class="calc-button">
+                        <button class="calcula-total">Calcular</button>
+                    </div>
+                    <div class="total">
+                        <label for="valor" class="valor-total">Valor total:</label>
+                        <input type="text" id="valor" class="value-field" readonly>
+                    </div>
+                </div>     
+            </div>
+        </div>  
+            <form onsubmit="return validarFormulario()">
+                <div class="form-comprador">
+                    <h2>Dados do Comprador</h2>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required><br>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required><br>
+                </div>
+                <div class="form-pagamento">
+                    <h2>Informações de Pagamento</h2>
+                    <label for="numero-cartao">Número do Cartão:</label>
+                    <input type="text" id="numero-cartao" name="numero-cartao" required><br>
+                
+                    <label for="nome-cartao">Nome no Cartão:</label>
+                    <input type="text" id="nome-cartao" name="nome-cartao" required><br>
+                
+                    <label for="validade-cartao">Validade do Cartão:</label>
+                    <input type="text" id="validade-cartao" name="validade-cartao" required><br>
+                
+                    <label for="cvv-cartao">CVV do Cartão:</label>
+                    <input type="text" id="cvv-cartao" name="cvv-cartao" required><br>
+                </div>
+                <div class="form-endereco">
+                    <h2>Endereço de Entrega</h2>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required><br>
 
-                        <label for="rua">Rua:</label>
-                        <input type="text" id="endereco" name="endereco" required><br>
-                    
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" name="cidade" required><br>
-                    
-                        <label for="estado">Estado:</label>
-                        <input type="text" id="estado" name="estado" required><br>
-                    
-                        <div class="capsula">
-                            <button type="submit">Finalizar Compra</button>
-                            <div class="gato-fofo">
-                                <img src="../imagens/filmes/cute-cat-cartoon-kitty.png">
-                            </div>
+                    <label for="rua">Rua:</label>
+                    <input type="text" id="endereco" name="endereco" required><br>
+                
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required><br>
+                
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" required><br>
+                
+                    <div class="capsula">
+                        <button type="submit">Finalizar Compra</button>
+                        <div class="gato-fofo">
+                            <img src="../imagens/filmes/cute-cat-cartoon-kitty.png">
                         </div>
                     </div>
-                </form>                
-            </body>            
+                </div>
+            </form>           
         </main>
-            <footer>
-                <a href="https://www.facebook.com" target="_blank"><img src="../imagens/redes/facebook.png"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../imagens/redes/instagram-logo.png"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="../imagens/redes/twitterlogo.png"></a>
-                <p>Todos os direitos reservados - GATINHOSFLIX © 2023</p>
-            </footer>
-        <script>src="../JS/validarObrigatorio.js"</script>
-        <script>src="../JS/botaoInterativo.js"</script>
-        <script>src="../JS/updateTotal.js"</script>
+        <footer>
+            <a href="https://www.facebook.com" target="_blank"><img src="../imagens/redes/facebook.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../imagens/redes/instagram-logo.png"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../imagens/redes/twitterlogo.png"></a>
+            <p>Todos os direitos reservados - GATINHOSFLIX © 2023</p>
+        </footer>
+            <!-- Script personaliza plano-->
+            <script>src="../JS/updateTotal.js"</script>
+            <!-- Script campo obrigatório-->
+            <script>src="../"</script>
     </body>           
 </html>

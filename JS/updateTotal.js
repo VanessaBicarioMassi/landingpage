@@ -1,12 +1,12 @@
-function updateTotal() {
-    var select1 = document.getElementById('select1');
-    var select2 = document.getElementById('select2');
-    var valor = document.getElementById('valor');
-  
-    var selectedValue1 = parseInt(select1.value);
-    var selectedValue2 = parseFloat(select2.value);
-    var total = selectedValue1 * selectedValue2;
-  
-    valor.value = 'R$ ' + total.toFixed(2);
-  }
-  
+let calcularTotal = () => {
+  let select1 = document.getElementById('select1').value;
+  let select2 = document.getElementById('select2').value;
+
+  let resultado = select1 * select2;
+
+  document.getElementById('valor').value = resultado;
+  console.log(resultado);
+};
+
+let botao = document.querySelector('.calcula-total');
+botao.addEventListener('click', calcularTotal);

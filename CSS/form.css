@@ -21,7 +21,7 @@ form > div {
 }
 
 h2 {
-  color: #ff007b;
+  color: #fc67ac;
 }
 
 label {
@@ -41,7 +41,7 @@ input[type="tel"] {
 }
 
 button[type="submit"] {
-  background-color: #ff007b;
+  background-color: #fc67ac;
   border: none;
   border-radius: 8px;
   color: #fff;
