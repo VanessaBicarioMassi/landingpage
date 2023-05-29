@@ -13,6 +13,7 @@ let validarObrigatorio = () => {
 
     if (nome === "") {
         alert('O campo "nome" é obrigatório.');
+        console.log("abacate")
         return;
     }
 
