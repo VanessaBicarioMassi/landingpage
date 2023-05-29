@@ -68,5 +68,5 @@ let validarObrigatorio = () => {
     }
   };
   
-let btnFinalizar = document.getElementById('button-finale')
+let btnFinalizar = document.querySelector('.button-finale')
 btnFinalizar.addEventListener('click', validarObrigatorio);

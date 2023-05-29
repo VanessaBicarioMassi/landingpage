@@ -40,7 +40,7 @@ input[type="tel"] {
   margin-bottom: 16px;
 }
 
-button[type="submit"] {
+button[class="button-finale"] {
   background-color: #fc67ac;
   border: none;
   border-radius: 8px;
@@ -52,7 +52,7 @@ button[type="submit"] {
 
 }
 
-button[type="submit"]:hover {
+button[class="button-finale"]:hover {
   background-color: #ff00d4;
 }
 
