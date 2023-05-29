@@ -3,9 +3,10 @@ let calcularTotal = () => {
   let select2 = document.getElementById('select2').value;
 
   let resultado = select1 * select2;
+  let resultadoFormatado = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(resultado);
 
-  document.getElementById('valor').value = resultado;
-  console.log(resultado);
+  document.getElementById('valor').value = resultadoFormatado;
+  console.log(resultadoFormatado);
 };
 
 let botao = document.querySelector('.calcula-total');
